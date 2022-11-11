@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>GESTURALITY Puzzle</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/image-puzzle.css" rel="stylesheet" />
+    <script src="js/image-puzzle.js"></script>
+</head>
+
+<body value="3" onload="imagePuzzle.startGame(images, this.value)" >
+
+
+    <div id="collage">
+        <h2>Puzzle Gestual </h2>
+        <hr />
+        <div id="playPanel" style="padding:5px;display:none;">
+            <h3 id="imgTitle"></h3>
+            <hr />
+            <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
+                <ul id="sortable" class="sortable"></ul>
+                <div id="actualImageBox">
+                    <div id="stepBox">
+                        <div><h1>Movimientos:<h1></div>
+                        <div id="stepCount" class="stepCount">0</div>
+                    </div>
+                    <div id="timeBox">
+                        Tiempo: <span id="timerPanel"></span> secs
+                    </div>
+                    <img id="actualImage" />
+                    <div>Reordena las piezas para recrear la imagen.</div>
+                    <p id="levelPanel">
+					    
+                        <input type="radio" name="level" id="easy"   value="3" onchange="imagePuzzle.startGame(images, this.value)"  ; /> 
+						<label for="easy">Fácil</label>
+                        <input type="radio" name="level" id="medium"  value="4" onchange="imagePuzzle.startGame(images, this.value);" />  
+						<label for="medium">Medio</label>
+                        <input type="radio" name="level" id="hard" value="5" checked="checked" onchange="imagePuzzle.startGame(images, this.value);" />   
+						<label for="hard">Difícil</label>
+                    </p>
+                    <div>
+                        <button id="btnRule" type="button" class="btn" onclick="rules();">Resolver</button>
+                        <button id="newPhoto" type="button" class="btn" onclick="restart();">Otra foto</button>
+                        <button id="btnReplay" type="button" class="btn" onclick="about();">Acerca de ...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gameOver" style="display:none;">
+            <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
+                <h2 style="text-align:center">¡¡Game Over!!</h2>
+                ¡¡Enhorabuena!!. <br /> Has completado esta imagen.
+                <br /> Movimientos: <span id="stepCount" class="stepCount">0</span> steps.
+                <br /> Tiempo: <span class="timeCount">0</span> segundos<br />
+                <div>
+                    <button type="button" onclick="window.location.reload(true);">Volver a jugar</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var images = [
+                { src: 'images/A logo.png', title: 'A' },
+{ src: 'images/B logo.png', title: 'B logo.png' },
+{ src: 'images/C logo.png', title: 'Gesto Letra C' }
+
+
+
+            ];
+
+            window.onload = function () {
+                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
+                imagePuzzle.startGame(images, gridSize);
+            };
+            function restart() {
+                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
+                imagePuzzle.startGame(images, gridSize);
+            }
+            function rules() {
+                alert('Reorganice las partes de la imagen de manera que forme correctamente la imagen. \nEl no. de los pasos dados se contarán.');
+            }
+            function about() {
+                alert('<h1> by Koldo y Patri</h1>');
+            }
+        </script>
+    </div>
+</body>
+</html>
