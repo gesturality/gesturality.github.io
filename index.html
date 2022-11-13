@@ -39,7 +39,8 @@
 						<label for="hard">Difícil</label>
                     </p>
                     <div>
-                        <button id="btnRule" type="button" class="btn" onclick="rules();">Resolver</button>
+                       
+                        <!-- <button id="btnRule" type="button" class="btn" onclick="rules();">Resolver</button> -->
                         <button id="newPhoto" type="button" class="btn" onclick="restart();">Otra foto</button>
                         <button id="btnReplay" type="button" class="btn" onclick="about();">Acerca de ...</button>
                     </div>
@@ -105,11 +106,11 @@
                 var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
                 imagePuzzle.startGame(images, gridSize);
             }
-            function rules() {
+            /* function rules() {
                 alert('Reorganice las partes de la imagen de manera que forme correctamente la imagen. \nEl no. de los pasos dados se contarán.');
-            }
+            } */
             function about() {
-                alert('<h1> by Koldo y Patri</h1>');
+                alert(' by Koldo y Patri');
             }
         </script>
     </div>
