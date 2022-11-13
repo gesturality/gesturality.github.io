@@ -38,14 +38,14 @@
                     </p>
                     <div>                       
                         <button id="newPhoto" type="button" class="btn" onclick="restart();">Otra foto</button>
-                        <button id="btnReplay" type="button" class="btn" onclick="about();">Acerca de ...</button>
+                       <!--  <button id="btnReplay" type="button" class="btn" onclick="about();">Acerca de ...</button> -->
                     </div>
                 </div>
             </div>
         </div>
         <div id="gameOver" style="display:none;">
             <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
-                <h2 style="text-align:center">¡¡Game Over!!</h2>
+                <h2 style="text-align:center">¡¡GENIAL!!</h2>
                 ¡¡Enhorabuena!!. <br /> Has completado esta imagen.
                 <br /> Movimientos: <span id="stepCount" class="stepCount">0</span> pasos.
                 <br /> Tiempo: <span class="timeCount">0</span> segundos<br />
@@ -101,12 +101,10 @@
                 var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
                 imagePuzzle.startGame(images, gridSize);
             }
-            /* function rules() {
-                alert('Reorganice las partes de la imagen de manera que forme correctamente la imagen. \nEl no. de los pasos dados se contarán.');
-            } */
-            function about() {
+           
+           /*  function about() {
                 alert(' by Koldo y Patri 2022');
-            }
+            } */
         </script>
     </div>
 </body>
