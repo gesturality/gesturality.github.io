@@ -8,9 +8,7 @@
     <script src="js/image-puzzle.js"></script>
 </head>
 
-<body value="3" onload="imagePuzzle.startGame(images, this.value)" >
-
-
+<body>
     <div id="collage">
         <h2>Puzzle Gestual </h2>
         <hr />
@@ -21,7 +19,7 @@
                 <ul id="sortable" class="sortable"></ul>
                 <div id="actualImageBox">
                     <div id="stepBox">
-                        <div><h1>Movimientos:<h1></div>
+                        <div>Movimientos:</div>
                         <div id="stepCount" class="stepCount">0</div>
                     </div>
                     <div id="timeBox">
@@ -38,9 +36,7 @@
                         <input type="radio" name="level" id="hard" value="5" checked="checked" onchange="imagePuzzle.startGame(images, this.value);" />   
 						<label for="hard">Difícil</label>
                     </p>
-                    <div>
-                       
-                        <!-- <button id="btnRule" type="button" class="btn" onclick="rules();">Resolver</button> -->
+                    <div>                       
                         <button id="newPhoto" type="button" class="btn" onclick="restart();">Otra foto</button>
                         <button id="btnReplay" type="button" class="btn" onclick="about();">Acerca de ...</button>
                     </div>
@@ -51,7 +47,7 @@
             <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
                 <h2 style="text-align:center">¡¡Game Over!!</h2>
                 ¡¡Enhorabuena!!. <br /> Has completado esta imagen.
-                <br /> Movimientos: <span id="stepCount" class="stepCount">0</span> steps.
+                <br /> Movimientos: <span id="stepCount" class="stepCount">0</span> pasos.
                 <br /> Tiempo: <span class="timeCount">0</span> segundos<br />
                 <div>
                     <button type="button" onclick="window.location.reload(true);">Volver a jugar</button>
@@ -69,8 +65,8 @@
 { src: 'images/E logo .png', title:  'Gesto Letra E' },
 { src: 'images/F logo.png', title: ' Gesto Letra F ' },
 { src: 'images/G logo.png', title: ' Gesto Letra G ' },
-{ src: 'images/H logo.png', title: ' Gesto Letra H ' }
-/* { src: 'images/I logo .png', title:  'Gesto Letra I' },
+{ src: 'images/H logo.png', title: ' Gesto Letra H ' },
+{ src: 'images/I logo .png', title:  'Gesto Letra I' },
 { src: 'images/J logo.png', title: ' Gesto Letra J ' },
 { src: 'images/K logo.png', title: ' Gesto Letra K ' },
 { src: 'images/L logo.png', title: ' Gesto Letra L ' },
@@ -92,8 +88,7 @@
 { src: 'images/Z logo.png', title: ' Gesto Letra Z ' },
 { src: 'images/Ç logo.png', title: ' Gesto Letra Ç ' },
 { src: 'images/Ñ logo.png', title: ' Gesto Letra Ñ ' }
- */
-
+ 
 
 
             ];
