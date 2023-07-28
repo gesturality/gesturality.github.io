@@ -53,21 +53,21 @@ function changeImage(a)
           //Empty the array
           open_ele.length=0;
 
-          },2000);
+          },1000);
           //Incrementing the total number of matches found out of 8
           //Decides the end of game
           total++;
           var len = document.getElementsByClassName("score")[0].getElementsByTagName("li").length;
           document.getElementsByClassName("score")[0].getElementsByTagName("li")[len-1].innerHTML="Parejas Formadas : " + String(total) + " / 6"; 
 
-          if(total == 18) //if all matches are found
+          if(total == 6) //if all matches are found
           {
             showModal();
              eles = document.getElementsByClassName("score")[0].getElementsByTagName("li");
-             eles[eles.length-2].innerHTML="Jugador 1 : " + mode +" <span style='color : rgb(45,247,55);'>Completed</span>";
+             eles[eles.length-2].innerHTML="Jugador 1 : " + mode +" <span style='color : rgb(45,247,55);'>Completado</span>";
              document.getElementsByTagName("table")[0].style.display="none";
              document.getElementsByClassName("message")[0].style.display="block";
-             document.getElementsByClassName("message")[0].innerHTML=":) Congrats. You unlocked all blocks!.";
+             document.getElementsByClassName("message")[0].innerHTML=":) Enhorabuena. ¡Has encontrado todas las parejas!.";
              document.getElementsByClassName("message-button")[0].style.display="block";
              return;
           }
@@ -77,17 +77,17 @@ function changeImage(a)
            attempts--; //reduce the attempts 
           
            //updating the attempts left in menu bar
-          document.getElementsByTagName("attempt")[0].innerHTML = "Attempts : " + attempts;
+          document.getElementsByTagName("attempt")[0].innerHTML = "Intentos : " + attempts;
           
           if(attempts == 0)
           {
             showModal();
             fail=1;
             eles = document.getElementsByClassName("score")[0].getElementsByTagName("li");
-            eles[eles.length-2].innerHTML="Jugador 1 : " + mode +" <span style='color : rgb(252,3,11);'>Failed</span>";
+            eles[eles.length-2].innerHTML="Jugador 1 : " + mode +" <span style='color : rgb(252,3,11);'>Fallido</span>";
             document.getElementsByTagName("table")[0].style.display="none";
             document.getElementsByClassName("message")[0].style.display="block";
-            document.getElementsByClassName("message")[0].innerHTML=":( Oops.....You ran out of attempts.";
+            document.getElementsByClassName("message")[0].innerHTML=":( Oops.....Se han terminadols intentos.";
             document.getElementsByClassName("message-button")[0].style.display="block";
             open_ele.length=0;
              return;
@@ -102,7 +102,7 @@ function changeImage(a)
            open_ele[0].style.backgroundImage="none";
            open_ele[1].style.backgroundImage="none";
            open_ele.length=0;
-           },2000);
+           },1000);
         }
   }
  
@@ -115,7 +115,7 @@ function hideIntro()
     document.getElementsByClassName("intro")[0].style.display="none";
     selectDifficulty();
     setBackground();
-   },2000);
+   },500);
 }
 
 //Function for shuffling the array
@@ -174,7 +174,8 @@ function setBackground()
 
 function selectDifficulty()
 {
-  document.getElementsByClassName("difficulty")[0].style.display="block";
+  setDifficulty("Easy Level")
+  //document.getElementsByClassName("difficulty")[0].style.display="block";
 }
 
 function setDifficulty(_mode)
@@ -189,7 +190,7 @@ function setDifficulty(_mode)
       attempts = max_beginner;
       mode = "Easy Level";
       break;
-
+/*
     case 1:
       attempts = max_intermediate;
       mode = "Intermediate Level";
@@ -199,6 +200,7 @@ function setDifficulty(_mode)
       attempts = max_expert;
       mode = "Hard Level";
       break;
+      */
   }
   ul = document.getElementsByClassName("score")[0];
   li_1 = document.createElement("li");

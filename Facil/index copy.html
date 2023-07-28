@@ -12,18 +12,7 @@
     data-islocked : if image of two blocks matched then both are locked and won't be locked
 -->
 
-<body onload="hideIntro();">
-<div class="intro">
-    <h1>Parejas de Gestos<sub> by  gesturality.es</sub></h1>
-</div>
-
-<div class="difficulty">
-    <ul class="difficulty-levels">
-        <li onclick="setDifficulty(0)">Fácil</li>
-        <li onclick="setDifficulty(1)">Intermedio</li>
-        <li onclick="setDifficulty(2)">Difícil</li>
-    </ul>
-</div>
+<body >
 
 <div class="modal">
     <div class="alert-message">
@@ -40,27 +29,7 @@
     </div>
 </div>
 
-<div class="container">
-    
-    <div class="header">
-        <h1 class="header-title">Parejas de Gestos<sub> by  gesturality.es</sub>
-        <attempt>Intentos : </attempt>
-        </h1>
 
-    </div>
-    
-    <div class="leader">
-        <ul class="options">
-        <li onclick="document.getElementsByClassName('modal')[1].style.display='block';" title="Reiniciar"><img src="restart.png"></li>
-            <li title="Ayuda"><a href="help.html" target="_blank"><img src="help.png"></a></li>
-        </ul>
-
-        <h1 class="leaderboard">Clasificación</h1>
-        <ul class="score">
-            
-        </ul>
-
-    </div>
     <table name='matrix' cellspacing="10">
         <tr>
             <td onclick="changeImage(this)"   class="ele" id='0'></td>
