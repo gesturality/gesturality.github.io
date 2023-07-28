@@ -280,16 +280,16 @@ table[name='matrix'] tr td{
     border-radius : 5px;
 }
 
-@media only screen and (max-width : 1140px)
+@media only screen and (max-width : 640px)
 {
     .leader
     {
-    width :85%;
+    width :35%;
     }
 
 }
 
-@media only screen and (max-width : 1140px)
+@media only screen and (max-width : 640px)
 {
     .leader
     {
