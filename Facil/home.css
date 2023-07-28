@@ -57,8 +57,8 @@ html,body
 
 .options li img
 {
-    width : 30px;
-    height : 30px;
+    width : 180px;
+    height : 180px;
 }
 
 .leaderboard
@@ -119,7 +119,7 @@ table[name='matrix']
     top : 3%;
 
 }
-
+/*tamaño de las imagenes*/
 table[name='matrix'] tr td{
     width : 180px;
     height  : 180px;
@@ -131,7 +131,7 @@ table[name='matrix'] tr td{
 .ele
 {
     background-repeat: no-repeat;
-    background-size: 80px 80px;
+    background-size: 180px 180px;
 }
 .container
 {
@@ -280,7 +280,7 @@ table[name='matrix'] tr td{
     border-radius : 5px;
 }
 
-@media only screen and (max-width : 640px)
+@media only screen and (max-width : 1140px)
 {
     .leader
     {
@@ -289,7 +289,7 @@ table[name='matrix'] tr td{
 
 }
 
-@media only screen and (max-width : 640px)
+@media only screen and (max-width : 1140px)
 {
     .leader
     {
