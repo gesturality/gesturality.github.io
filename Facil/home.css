@@ -121,8 +121,8 @@ table[name='matrix']
 }
 /*tamaño de las imagenes*/
 table[name='matrix'] tr td{
-    width : 180px;
-    height  : 180px;
+    width : 200px;
+    height  : 200px;
     background-color: black;
     border-radius: 5px;
     transition: background-color 0.4s linear;
@@ -131,7 +131,7 @@ table[name='matrix'] tr td{
 .ele
 {
     background-repeat: no-repeat;
-    background-size: 180px 180px;
+    background-size: 200px 200px;
 }
 .container
 {
