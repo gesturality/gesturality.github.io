@@ -21,6 +21,16 @@ var mode="";
 //Set to 1 if user fails a level else 0
 var fail=0;
 
+var alarm = new Audio('/sounds/trompetas.mp3');
+//alarm.play();   // you can then invoke the play method
+//alarm.pause(); 
+
+
+function alarm(a)
+{
+  alarm.play(); 
+}
+
 //Multiple blocks opened will be closed in the order of its opening
 function changeImage(a)
 {
@@ -43,6 +53,8 @@ function changeImage(a)
        open_ele.push(a);
        
        //if bg images of both images are the same
+
+     
        if(open_ele[0].style.backgroundImage.split("/")[2] == open_ele[1].style.backgroundImage.split("/")[2])
        {
           window.setTimeout(function(){
@@ -57,6 +69,7 @@ function changeImage(a)
           //Incrementing the total number of matches found out of 8
           //Decides the end of game
           total++;
+          sonido.play()
           var len = document.getElementsByClassName("score")[0].getElementsByTagName("li").length;
           document.getElementsByClassName("score")[0].getElementsByTagName("li")[len-1].innerHTML="Parejas Formadas : " + String(total) + " / 6"; 
 
@@ -93,7 +106,9 @@ function changeImage(a)
              return;
           }
 
-           
+             // sonido trompetas
+      //var audio = document.getElementById('audio');
+      //audio.play();
 
            //Give a 2 second delay for the user to see the picture and hide them
            window.setTimeout(function(){
@@ -108,7 +123,7 @@ function changeImage(a)
  
 }
 
-//This hides the intro screen
+//This hides the intro screen  // Tiempo Introduccion
 function hideIntro()
 {
     window.setTimeout(function(){

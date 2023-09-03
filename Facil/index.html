@@ -5,6 +5,7 @@
         <title>Parejas de gestos</title>
         <link href="home.css" rel="stylesheet"> <!-- CSS file for styling-->
         <script type="text/javascript" src="home.js"></script> <!-- JavaScript file -->
+        
     </head>
 
 <!--
@@ -13,8 +14,15 @@
 -->
 
 <body onload="hideIntro();">
+   
+    <script >
+        var sonido = new Audio();
+        sonido.src="pop.wav";        
+        </script>
+        
 <div class="intro">
     <h1>Parejas de Gestos<sub> by  gesturality.es</sub></h1>
+   
 </div>
 
 <div class="difficulty">
@@ -43,6 +51,10 @@
 <div class="container">
     
     <div class="header">
+        
+        <button class="contact100-form-btn" id="enviar" onmousedown="sonido.play()">
+            Enviar datos
+        </button>
         <h1 class="header-title">Parejas de Gestos<sub> by  gesturality.es</sub>
         <attempt>Intentos : </attempt>
         </h1>
