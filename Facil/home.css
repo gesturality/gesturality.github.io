@@ -116,14 +116,14 @@ table[name='matrix']
 {
     display: none;
     padding : 0px;
-    position: relative;
-    top : 3%;
+    position: left;
+    top : 15%;
 
 }
 /*tamaño de las imagenes*/
 table[name='matrix'] tr td{
-    width : 150px;
-    height  : 150px;
+    width : 120px;
+    height  : 120px;
     background-color: black;
     border-radius: 5px;
     transition: background-color 0.4s linear;
@@ -132,7 +132,7 @@ table[name='matrix'] tr td{
 .ele
 {
     background-repeat: no-repeat;
-    background-size: 150px 150px;
+    background-size: 120px 120px;
 }
 .container
 {
@@ -153,7 +153,7 @@ table[name='matrix'] tr td{
     padding : 0px;
     margin : 0px;
     width : 100%;
-    height : 8%;
+    height : 7%;
     background-color: black;
     text-align: center;
 }
