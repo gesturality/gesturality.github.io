@@ -1,13 +1,14 @@
 //arr[] contains the list of images
 var arr=[];
 
-//Stores the opened elements
+//Stores the opened elements ss
 var open_ele=[];
 
 //Total number of matches found
 var total=0;
 
 //Attempts for each difficulty level
+//ddd
 var max_beginner = 30;
 var max_intermediate = 27;
 var max_expert = 25;
@@ -250,6 +251,11 @@ function restartGame()
   total=0;
   selectDifficulty();
   setBackground();
+
+
+//recargar pagina
+
+  window.location.reload(true); 
 }
 
 function playAgain()

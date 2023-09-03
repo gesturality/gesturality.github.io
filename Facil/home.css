@@ -218,8 +218,8 @@ table[name='matrix'] tr td{
 {
     position: fixed;
     display: none;
-    width : 10%;
-    height : 10%;
+    width : 50%;
+    height : 50%;
     background-color : rgba(0,0,0,0.8);
     z-index : 1;
     text-align: center;
@@ -228,8 +228,8 @@ table[name='matrix'] tr td{
 .alert-message
 {
     display: block;
-    width : 30%;
-    height : 30%;
+    width : 50%;
+    height : 50%;
     background-color : white;
     border-radius : 5px;
     margin: auto;

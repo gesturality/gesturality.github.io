@@ -10,7 +10,8 @@
 
 <!--
     data-isopen : if a block is opened this attribute is changed to true else false
-    data-islocked : if image of two blocks matched then both are locked and won't be locked
+    data-islocked : if image of two blocks matched then both are locked and won't be locked xxx
+    xx
 -->
 
 <body onload="hideIntro();">
@@ -19,7 +20,12 @@
         var sonido = new Audio();
         sonido.src="pop.wav";        
         </script>
-        
+        <script>
+            function refreshPage(){
+                window.location.reload();
+            } 
+            </script>
+               
 <div class="intro">
     <h1>Parejas de Gestos<sub> by  gesturality.es</sub></h1>
    
@@ -57,7 +63,7 @@
         <attempt>Intentos : </attempt>
         </h1>
         <ul class="options">
-            <li onclick="document.getElementsByClassName('modal')[1].style.display='block';" title="Reiniciar"><img src="restart.png"></li>
+            <li onclick="window.location.reload();" title="Reiniciar"><img src="restart.png"></li>
             <li title="Ayuda"><a href="help.html" target="_blank"><img src="help.png"></a></li>
     
            
