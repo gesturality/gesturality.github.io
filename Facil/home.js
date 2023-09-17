@@ -168,7 +168,7 @@ function setBackground()
    arr = shuffle(arr);  
 
     //Set the attempts left on the menu bar as well
-  document.getElementsByTagName("attempt")[0].innerHTML = "Attempts : " + 0;
+  document.getElementsByTagName("attempt")[0].innerHTML = "Intentos : " + 0;
 
   //Hide the message and button elements
   document.getElementsByClassName("message")[0].style.display="none";

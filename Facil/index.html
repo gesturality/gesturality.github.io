@@ -62,18 +62,11 @@
         <h1 class="header-title">Parejas de Gestos<sub> by  gesturality.es</sub>
         <attempt>Intentos : </attempt>
         </h1>
-        <ul class="options">
-            <li onclick="window.location.reload();" title="Reiniciar"><img src="restart.png"></li>
-            <li title="Ayuda"><a href="help.html" target="_blank"><img src="help.png"></a></li>
-    
-           
-            <ul class="score">
-                
-            </ul>
+         
+          
     
     </div>
-    
-    <br> <br>
+
     <table name='matrix' cellspacing="10">
         <tr>
             <td onclick="changeImage(this)"   class="ele" id='0'></td>
@@ -108,7 +101,13 @@
 
         </tr>
     </table>
-
+    <ul class="options">
+        <li class="score"> </li>
+    
+        <li onclick="window.location.reload();" title="Reiniciar"><img src="restart.png"></li>
+        <li title="Ayuda"><a href="help.html" target="_blank"><img src="help.png"></a></li>
+    </ul>  
+   
     <h1 class="message"></h1>
     <button class="message-button" onclick="playAgain()">Jugar de nuevo></button>
 </div>
