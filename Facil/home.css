@@ -11,7 +11,7 @@
 }
 html,body
 {
-    width : 500px;
+    width : 400px;
     height : 100%;
     padding : 0px;
     margin : 0px;
@@ -22,10 +22,10 @@ html,body
 .intro
 {
     display: block;
-    position: fixed;
+    position: right;
     z-index : 1;
-    width : 10%;
-    height : 30%;
+    width : 1%;
+    height : 1%;
     background-color : white;
 }
 
@@ -35,7 +35,7 @@ html,body
     width : 15%;
     height : 50%;
     background-color: white;
-    float : left;
+    float : right;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -114,9 +114,7 @@ font-size : 10px;
 table[name='matrix']
 {
     display: none;
-    padding : 1px;
-    position: left;
-    top : 15%;
+  
 
 }
 /*tamaño de las imagenes*/
@@ -135,26 +133,16 @@ table[name='matrix'] tr td{
 }
 .container
 {
-    display : block;
-    width : 100%;
-    height : 100%;
+    display : left;
+    width : 450px;
+    height :4500px;
     text-align : center;
-    margin : auto;
+    margin : none;
 }
 
 .header
 {
-    display: block;
-    position: relative;
-    top : 0px;
-    left : 10px;
-    right : 0px;
-    padding : 0px;
-    margin : 0px;
-    width : 90%;
-    height : 7%;
-    background-color: black;
-    text-align: center;
+    
 }
 
 .header-title
@@ -162,13 +150,13 @@ table[name='matrix'] tr td{
     display: block;
     width : inherit;
     font-family : 'Pacifico';
-    color : white;
-    font-size : 23px;
+    color : black;
+    font-size : 13px;
     padding : 0px;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 5px;
     margin : 0px;
-    margin-left: -10px;
+    margin-left: 0px;
 }
 
 .header-title sub
