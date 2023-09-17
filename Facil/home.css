@@ -16,13 +16,16 @@ html,body
     padding : 0px;
     margin : 0px;
     background-color: rgb(250, 200, 167);
-
+    display : left;
+    position: left;
+    display : left;
+      margin : none;
 }
 
 .intro
 {
-    display: block;
-    position: right;
+    position: left;
+    display : left;
     z-index : 1;
     width : 1%;
     height : 1%;
@@ -35,15 +38,17 @@ html,body
     width : 15%;
     height : 50%;
     background-color: white;
-    float : right;
+    position: left;
     overflow: scroll;
     overflow-x: hidden;
+    display : left;
+
 }
 
 .options
 {
    display: block;
-   margin : auto;
+   margin : 0px;
    padding : 0px;
    padding-top : 25px;
 }
@@ -69,7 +74,7 @@ html,body
     color : black;
     font-size : 20px;
     font-weight: lighter;
-    float : right;
+    float : left;
 }
 
 .score
@@ -88,14 +93,7 @@ html,body
 
 .intro h1
 {
-font-family: 'Pacifico';
-color : black;
-display: block;
-text-align: center;
-font-size : 20px;
-margin : auto;
-position: relative;
-top : 15%;
+
 }
 
 .intro h1 sub
@@ -113,30 +111,33 @@ font-size : 10px;
 }
 table[name='matrix']
 {
-    display: none;
+    position: left;
+    display : left;
   
 
 }
 /*tamaño de las imagenes*/
 table[name='matrix'] tr td{
-    width : 100px;
-    height  : 100px;
+    width : 90px;
+    height  : 90px;
     background-color: black;
     border-radius: 5px;
     transition: background-color 0.4s linear;
+    position: left;
+    display : left;
 }
 
 .ele
 {
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    background-size: 90px 90px;
 }
 .container
 {
     display : left;
     width : 450px;
-    height :4500px;
-    text-align : center;
+    height :450px;
+    text-align : left;
     margin : none;
 }
 
@@ -147,26 +148,17 @@ table[name='matrix'] tr td{
 
 .header-title
 {
-    display: block;
-    width : inherit;
-    font-family : 'Pacifico';
-    color : black;
-    font-size : 13px;
-    padding : 0px;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    margin : 0px;
-    margin-left: 0px;
 }
 
 .header-title sub
 {
-    font-size : 15px;
+    font-size : 10px;
 }
 
 .header-title attempt
 {
-    float : right;
+    float : center;
+    font-size : 15px;
 }
 
 .difficulty
@@ -269,7 +261,7 @@ table[name='matrix'] tr td{
     border-radius : 5px;
 }
 
-@media only screen and (max-width : 140px)
+@media only screen and (max-width : 1400px)
 {
     .leader
     {
@@ -278,7 +270,7 @@ table[name='matrix'] tr td{
 
 }
 
-@media only screen and (max-width : 140px)
+@media only screen and (max-width : 1400px)
 {
     .leader
     {
